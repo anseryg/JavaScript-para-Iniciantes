@@ -1,11 +1,28 @@
 # Príncipios da linguagem de programação JavaScript.
 
-Um "Guia" **básico** sobre Javascript e de como a linguagem funciona. Este guia poderá ser util para estudar ou para revisão. </br>
+Um "Guia" **básico** sobre Javascript e de como a linguagem funciona. Este guia poderá ser util para iniciantes em programação estudar ou para revisão. </br>
 **Feito por:** Dreynus
 
-## Variáveis - var/let/const
+## Variáveis - Como declarar uma:
 **Variáveis** São uma espécie de caixa, onde você pode guardar dados ou valores dentro delas para utiliza-las depois.  
-Antes de declarar uma variável, você primeiro precisa declarar qual o tipo dela, e eles são:  
+Antes de declarar uma variável, segue algumas regras:  
+
+**Identificadores** (nome da variável):  
+* Podem começar com letra, $ ou _
+* Não podem começar com números
+* É possivel usar acentos ou símbolos
+* Não pode conter espaços
+* Maiúculas e minúsculas fazem diferença (Ao criar duas variáveis, uma "M" e outra "m", será duas váriaveis diferentes)
+
+Para criar uma váriavel, primeiramente você precisar declarar o tipo dela, o nome e dar a ela um valor.  
+**Exemplo:**
+
+~~~javascript
+var nome = "Gabriel"
+~~~
+ Foi declarada uma variável do tipo `var` com o nome de `nome` e está guardando a string `"Gabriel"`.
+
+## Tipos de variáveis - `var`, `let` e `const`:
 
 ### **`Var`** -> Declarações com `var` tem escopo global ou escopo de função/local:
 O escopo é global quando uma variável `var` é declarada fora de uma função. Isso significa que qualquer variável que seja declarada com `var` fora de um bloco de função pode ser utilizada na janela inteira.  
@@ -46,12 +63,20 @@ Como visto acima, usar `hey` fora do bloco na qual ela foi criada retornará err
 Você pode atualiza-la (dentro de seu escopo) mas não pode declarar novamente (dentro de seu escopo), podendo assim ser declarada novamente em outros escopos.
 
 
-### **`Const`**
+### **`Const`** -> Variáveis `const` mantêm valores constantes
+Variáveis `const` também possuem declarações apenas de bloco, assim como `let` as declarações de `const` só podem ser acessadas dentro do bloco onde foram criadas.  
+Declarações `const` não podem ser declaradas e nem atualizadas novamente.
 
-**Obs:** Quando usa var/let/const antes do nome de uma variável você está declarando ela, e quando você quer atualizar ela, você não necessariamente precisa declarar se é var, let ou const novamente, apenas `var` aceita ser declarada novamente, `let` e `const` darão erros, ja que `let` pode ser atualizada mas não declarada novamente e `const` não pode ser atualizada e nem declarada novamente. Então para atualizar o valor utilize apenas o nome da variável e defina o valor que atualizará, a não ser que queira declarar ela novamente.
+---
+
+>**Obs:** Quando usa var/let/const antes do nome de uma variável você está declarando ela, e quando você quer atualizar ela, você não necessariamente precisa declarar se é var, let ou const novamente, apenas `var` aceita ser declarada novamente, `let` e `const` darão erros, ja que `let` pode ser atualizada mas não declarada novamente e `const` não pode ser atualizada e nem declarada novamente. Então para atualizar o valor utilize apenas o nome da variável e defina o valor que atualizará, a não ser que queira declarar ela novamente.
+>Segue no exemplo abaixo:
+
 ~~~javascript
 var nome = "Gabriel"; // Aqui você declarou uma variável do tipo nome.
 nome = "Santos"; // Aqui você apenas alterou o seu valor.
 ~~~
+
+---
 
 Saiba mais sobre a [diferença entre as variáveis aqui.](https://www.freecodecamp.org/portuguese/news/var-let-e-const-qual-e-a-diferenca/)
