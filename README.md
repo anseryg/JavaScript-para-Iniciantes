@@ -120,3 +120,6 @@ A variável `carro` existe porém não tem nenhum valor atribuido a ela.
 
 ### Undefined
 É utilizado quando uma variável não teve um valor atribuído.
+
+---
+#### Ainda estou escrevendo, logo terá mais coisas...
