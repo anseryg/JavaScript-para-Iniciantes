@@ -73,7 +73,7 @@ Declarações `const` não podem ser declaradas e nem atualizadas novamente.
 >Segue no exemplo abaixo:
 
 ~~~javascript
-var nome = "Gabriel"; // Aqui você declarou uma variável do tipo nome.
+var nome = "Gabriel"; // Aqui você declarou uma variável do tipo var.
 nome = "Santos"; // Aqui você apenas alterou o seu valor.
 ~~~
 
