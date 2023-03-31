@@ -77,6 +77,46 @@ var nome = "Gabriel"; // Aqui você declarou uma variável do tipo nome.
 nome = "Santos"; // Aqui você apenas alterou o seu valor.
 ~~~
 
+Saiba mais sobre a [diferença entre as variáveis aqui.](https://www.freecodecamp.org/portuguese/news/var-let-e-const-qual-e-a-diferenca/)
+
 ---
 
-Saiba mais sobre a [diferença entre as variáveis aqui.](https://www.freecodecamp.org/portuguese/news/var-let-e-const-qual-e-a-diferenca/)
+## Data Types - Tipos de Dados:
+Dados são aquilo que você trata durante o programa, os que você guarda em variáveis (as vezes não).  
+E existem vários tipos de dados, sendo eles:
+* Number
+* String
+* Boolean
+* Null
+* Undefined
+
+### Numbers
+São basicamente números, sendo eles os números inteiros e flutuantes (decimais).
+~~~javascript
+var idade = 17
+~~~
+A variável `ìdade` contém um dado do tipo Number armazenada por ser um número.
+
+### String
+São basicamente textos, sendo declarados entre aspas simples ou duplas.
+~~~javascript
+var nome = "Gabriel"
+~~~
+A variável `nome` contém um dado do tipo String armazenado por ser um texto.
+
+### Boolean
+São um tipo de dado que possuem dois valores, `True` ou `False`
+~~~javascript
+var portaAberta = False
+var portaFechada = True
+~~~
+
+### Null
+É um tipo de dado que representa um valor nulo ou "vazio" intencional.
+~~~javascript
+var carros = null
+~~~
+A variável `carro` existe porém não tem nenhum valor atribuido a ela.
+
+### Undefined
+É utilizado quando uma variável não teve um valor atribuído.
