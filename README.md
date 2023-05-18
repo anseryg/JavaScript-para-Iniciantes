@@ -21,7 +21,7 @@
   <h1 style="font-size: 32px; margin-top: 16px; margin-bottom: 16px;">JavaScript: A Linguagem da Web</h1>
 </div>
 
-<p align="justify">JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Com ela, você pode criar interatividade, adicionar comportamento dinâmico e manipular o conteúdo das páginas da web.</p>
+<p align="justify"> JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Com ela, você pode criar interatividade, adicionar comportamento dinâmico e manipular o conteúdo das páginas da web.</p>
 
 <h3 align="justify">Principais características do JavaScript:</h3>
 
@@ -110,9 +110,74 @@ console.log('Olá', 'Mundo!')
 Olá Mundo!
 ```
 
+Também utilizamos o `+` para fazer junção, que seria a concatenação (Também veremos mais adiante)
 
-<!-- 1. Uso do console.log()
-2. Comentários
+~~~javascript
+console.log('Olá' + ' Mundo')
+~~~
+
+```
+Olá Mundo
+```
+
+<div align="center">
+  <h1 style="font-size: 80px;">Comentários no Código</h1>
+</div>
+
+`Comentários` em JavaScript são trechos de texto que você pode adicionar ao seu código para fazer anotações ou observações. Eles são usados para fornecer informações extras sobre o código, mas não afetam a forma como o programa é executado.
+
+Imagine que você está escrevendo um código e quer adicionar uma explicação para você mesmo ou para outras pessoas que vão ler o código. Os comentários permitem que você faça isso. Eles são como pequenas notas que você escreve no seu código.
+
+Os comentários não são interpretados pelo computador, então o programa ignora completamente o que está escrito nos comentários. Eles existem apenas para ajudar os humanos a entender o código.
+
+Existem 2 tipos de comentários em JavaScript:
+
+1. Comentários de uma linha: São usados para adicionar uma explicação rápida em apenas uma linha.  
+Exemplo:
+~~~javascript
+// Este é um Comentário de uma Linha ou Comentário de Linha.
+
+console.log('Olá!') // Comentário de linha também pode ser feito na linha de um código
+~~~
+
+2. Comentários em bloco: São usados para anotações maiores que podem ocupar várias linhas.  
+Exemplo:
+~~~javascript
+/*
+Este é um comentário em bloco.
+Tudo o que estiver entre esses asteriscos e barra será considerado um comentário.
+Não importa quantas linhas tenha.
+*/
+~~~
+
+Comentários são muito úteis quando você quer lembrar o que um pedaço de código faz ou quando você quer explicar o seu pensamento enquanto escreve o código. Eles também ajudam outras pessoas a entenderem o seu código caso você compartilhe com elas. Ah e claro, é uma boa prática de programação você adicionar comentários aos seus códigos até para não se perder caso ele fique enorme.
+
+
+<div align="center">
+  <h1 style="font-size: 80px;">Diferenças entre Node e Navegador</h1>
+</div>
+
+Quando falamos de programação em JavaScript, é importante entender que existem dois ambientes principais nos quais podemos executar nosso código: o navegador (como o Google Chrome, Mozilla Firefox, etc.) e o Node.js.
+
+O navegador é o programa que usamos para acessar a internet e visualizar páginas da web. Ele possui um mecanismo interno chamado mecanismo de renderização, que interpreta e executa o JavaScript contido nas páginas. No navegador, podemos interagir com elementos da página, manipular o DOM (Document Object Model), criar animações e muito mais. É o ambiente onde o JavaScript é amplamente utilizado para tornar as páginas da web interativas e dinâmicas.
+
+Já o Node.js é um ambiente de execução do JavaScript fora do navegador. Ele nos permite executar código JavaScript em um servidor, ou seja, em uma máquina remota. Com o Node.js, podemos construir servidores web, APIs, aplicativos em tempo real e muitas outras aplicações do lado do servidor. Diferentemente do navegador, o Node.js não tem um mecanismo de renderização, mas oferece acesso a recursos do sistema operacional, como arquivos, rede e bancos de dados, permitindo que construamos aplicativos completos e escaláveis.
+
+Uma das principais diferenças entre o Node.js e o navegador é o conjunto de recursos disponíveis. No navegador, temos acesso ao DOM, eventos do navegador, APIs específicas do navegador (como acesso à câmera ou geolocalização) e muitas outras funcionalidades voltadas para interações com o usuário. Já o Node.js oferece recursos voltados para o desenvolvimento do lado do servidor, como acesso ao sistema de arquivos, criação de servidores web, suporte a bancos de dados, entre outros.
+
+Outra diferença é a forma como o código é executado. No navegador, o código JavaScript é executado em resposta a eventos do usuário ou do próprio navegador. Por exemplo, quando clicamos em um botão, o código associado a esse evento é executado. Já no Node.js, o código é executado de forma contínua, esperando por solicitações externas. Ele é capaz de lidar com várias solicitações simultaneamente de maneira assíncrona, o que o torna ideal para aplicações que exigem alta escalabilidade e desempenho.
+
+Portanto, resumindo, o navegador é o ambiente onde o JavaScript é executado nas páginas da web, permitindo interações com o usuário e manipulação do conteúdo da página. Já o Node.js é um ambiente de execução do JavaScript fora do navegador, voltado para o desenvolvimento do lado do servidor, oferecendo acesso a recursos do sistema operacional e suporte para construção de aplicativos mais complexos.
+
+Um exemplo da diferença seria o uso de algumas funções que possui no Navegador e não no Node (Onde estamos executando nossos códigos). Uma função que se encaixa nisso é a `alert()`, essa função emite aquelas janelas de alerta do navegador, e podemos fazer isso da seguinte maneira:
+
+1. Precisamos de uma página, então vamos criar uma página de teste. Para isso criaremos um arquivo chamado "*index.html*", é importante que ele possua a extensão ".html".
+2. No Visual Studio Code, quando você abre um html e digita apenas "!" aparece uma sugestão de código 
+
+
+<!-- 
+1. Uso do console.log() - Feito
+2. Comentários - Feito
 3. A diferenças entre o Node e Navegador
 4. Variáveis let
 5. Váriaveis const
