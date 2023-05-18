@@ -172,13 +172,48 @@ Portanto, resumindo, o navegador é o ambiente onde o JavaScript é executado na
 Um exemplo da diferença seria o uso de algumas funções que possui no Navegador e não no Node (Onde estamos executando nossos códigos). Uma função que se encaixa nisso é a `alert()`, essa função emite aquelas janelas de alerta do navegador, e podemos fazer isso da seguinte maneira:
 
 1. Precisamos de uma página, então vamos criar uma página de teste. Para isso criaremos um arquivo chamado "*index.html*", é importante que ele possua a extensão ".html".
-2. No Visual Studio Code, quando você abre um html e digita apenas "!" aparece uma sugestão de código 
+2. No Visual Studio Code, quando você abre um html e digita apenas "!" aparece uma sugestão de código que faz um cabeçalho html automaticamente  
+![descrição da imagem](https://github.com/dreynus/JavaScript-para-Iniciantes/blob/main/img/sugestao-html-vscode.png)
+
+3. Agora que criamos um html, abra-o no navegador (vá até a pasta onde você o criou e abre, por padrão ele abrirá no seu navegador padrão).
+4. Próximo passo é criar um arquivo JavaScript e vamos vincula-lo a nossa página. No *html* vamos colocar no final do body:  
+~~~html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navegador Vs Node</title>
+</head>
+<body>
+  
+  <script src="./main.js"></script>  <!-- Dessa forma e substituindo pelo nome do seu arquivo. -->
+</body>
+</html>
+~~~
+
+Agora que estão vinculado, vamos no arquivo de JavaScript e utilizaremos a função `alert()` da seguinte forma:
+
+~~~javascript
+alert('Olá')  // Exibe uma janela de alerta com a mensagem "Olá"
+~~~
+
+Basta atualizar a página e aparecerá uma janela de alerta escrito "Olá". E aqui vemos uma diferença, na página não temos nenhum erro e funciona, porém quando tentamos executa-lo no VScode, com o Node, ela retornará erro, pois alert() não é uma função declarada, é uma função que existe apenas no navegador.
+
+Essa é apenas uma das diferenças que há em um que não há no outro, posteriormente iremos abordar mais diferenças.
+
+
+<div align="center">
+  <h1 style="font-size: 80px;">Variaveis let</h1>
+</div>
+
 
 
 <!-- 
 1. Uso do console.log() - Feito
 2. Comentários - Feito
-3. A diferenças entre o Node e Navegador
+3. A diferenças entre o Node e Navegador - Feito
 4. Variáveis let
 5. Váriaveis const
 6. Dados Primitivos
